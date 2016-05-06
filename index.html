@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8"/>
     <title>JALGRATTA POOD</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <style type="text/css">
     body {
     background-image: url(http://www.incomeactivator.com/images/freebg5.jpg);
@@ -66,6 +65,8 @@
     width: 500px;
     margin: 90px 0px 0px 20px;
     float: left;
+    font-size: 20px;
+    font-family: "Consolas";
 }
 
 
@@ -91,7 +92,7 @@
    background: url(http://bavotasan.com/wp-content/uploads/2011/05/down_arrow_select.jpg) no-repeat right #ddd;
    border: 1px solid #ccc;
    margin: 5px 0 0px 25px;
-   font-family: 'Arial';
+   font-family: 'Consolas';
    font-size: 18px;
    -webkit-appearance: none;
    -moz-appearance: none;
@@ -102,7 +103,7 @@
 }
 
 .ost option {
-    font-weight: bold;
+    
     font-size: 18px;
     text-align: center;
 }
@@ -142,9 +143,8 @@
     width: 200px;
     height: 34px;
     margin: 5px 0 0px 25px;
-    font-family: 'Arial';
+    font-family: 'Consolas';
     font-size: 18px;
-    font-weight: bold;
     overflow: hidden;
     border: 1px solid #ccc;
     appearance: none;
@@ -161,13 +161,13 @@
 .ost span {
     position: relative;
     margin-left: -70px;
-    font.font-family: 'Arial';
+    font.font-family: 'Consolas';
 }
 
 
 .kogus {
     margin-left: 25px;
-    font-family: "Arial";
+    font-family: "Consolas";
 }
 
 
@@ -180,8 +180,8 @@
     top: 366px;
     left: 1300px;
     color: black;
-    font-family: 'Arial';
-    font-size: 2
+    font-family: 'Consolas';
+    font-size: 20px;
 }
 
 
@@ -196,7 +196,7 @@
 
 .remont p {
     margin-left: 25px;
-    font-family: "Arial";
+    font-family: "Consolas";
 }
 
 
@@ -207,7 +207,7 @@
    background: url(http://bavotasan.com/wp-content/uploads/2011/05/down_arrow_select.jpg) no-repeat right #ddd;
    border: 1px solid #ccc;
    margin: 5px 0 0px 25px;
-   font-family: 'Arial';
+   font-family: 'Consolas';
    font-size: 18px;
    -webkit-appearance: none;
    -moz-appearance: none;
@@ -223,9 +223,9 @@
     font-size: 36px;
     position: relative;
     left: 25px;
-    top: 20px;
+    top: 108px;
     background-color: #ccc;
-    font-family: 'Arial';
+    font-family: 'Consolas';
     font-weight: bold;
 }
 
@@ -250,15 +250,15 @@
     font-size: 36px;
     position: relative;
     left: 25px;
-    top: 108px;
+    top: 130px;
     background-color: #ccc;
-    font-family: 'Arial';
+    font-family: 'Consolas';
     font-weight: bold;
 }
 
 
 .tuup {
-  font-family: 'Arial';
+  font-family: 'Consolas';
 }
 
 
@@ -271,7 +271,7 @@
 }
     </style>
     <script type="text/javascript">
-    function toggleSelectBox(selbox){ 
+    /*function toggleSelectBox(selbox){ 
         if(selbox.size>1){//HIDE:
             selbox.size=1;
             selbox.style.height="34px";
@@ -281,7 +281,7 @@
             selbox.size = selbox.options.length;
             selbox.style.height='auto';
         }
-    }
+    } */
 
     function Arvuta2()
     {
@@ -478,6 +478,8 @@
         }
         var kokku2 = kokku;
 
+
+
         if (document.getElementById("kliendikaartJah2").checked == true && document.getElementById("Sula2").checked == true)
         {
             kokku2 -= (kokku / 100) * 20;
@@ -500,13 +502,18 @@
         {
             alert("Kogu hind on: " + parseFloat(kokku2) +  " €");
         }
+
+        else 
+        {
+            alert("Sa ei vastanud kõikidele küsimustele!");
+        }
     }
     </script>
 </head>
 <body>
     <div class="remont">
         <h3>Remont</h3>
-        <p>Millist tüüpi sinu jalgratas on?(-50% hinnast)</p>
+        <p>Millist tüüpi sinu jalgratas on?(-50% jalgratta täis hinnast)</p>
         <form name="Arvuti1">
         <select id="type" name="type" onmouseout="toggleSelectBox(this)" onmouseover="toggleSelectBox(this)">
             <option value="0">Vali</option>
@@ -603,7 +610,7 @@
         <input name="kogus" type="text" id="kogus"></input>
 
         <p>Vali üks</p>
-        <form action="">
+        <form>
           <input type="radio" name="milline" value="uus" id="uus"><span class="tuup">Uus</span><br>
           <input type="radio" name="milline" value="kasutatud" id="kasutatud"><span class="tuup">Kasutatud (60% soodus)</span><br>
           <input type="radio" name="milline" value="rikkis" id="rikkis"><span class="tuup">Rikkis (80% soodus)</span><br>
@@ -611,16 +618,16 @@
 
 
         <p>Kas on olemas kliendikaart?</p>
-        <form action="">
-        <input name="kliendikaart" type="radio" ><span id="kliendikaartJah2">Jah</span>
-        <input name="kliendikaart" type="radio" ><span id="kliendikaartEi2">Ei</span>
+        <form>
+        <input name="kliendikaart" type="radio" id="kliendikaartJah2"><span>Jah</span>
+        <input name="kliendikaart" type="radio" id="kliendikaartEi2"><span>Ei</span>
         </form>
 
 
         <p>Kas sulas või kaardiga?</p>
-        <form action="">
-            <input name="makse2" type="radio"><span id="Sula2">Sula</span></input>
-            <input name="makse2" type="radio"><span id="Kaart2">Kaardiga</span></input>
+        <form>
+            <input name="makse2" type="radio" id="Sula2"><span>Sula</span></input>
+            <input name="makse2" type="radio" id="Kaart2"><span>Kaardiga</span></input>
 
         </form>
 
