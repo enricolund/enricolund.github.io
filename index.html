@@ -1,640 +1,224 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <title>Jalgrattapood</title>
-    <style type="text/css">
-    body {
-    background-image: url(http://www.incomeactivator.com/images/freebg5.jpg);
-}
-
-.jalgrattapood {
-    border-radius: 3px;
-    margin: 25px 1px 20px 0px; 
-    border: 3px solid white;
-    height: 225px;
-}
-
-
-#img1 {
-    width: 680px;
-    height: 225px;
-    border-radius: 3px;
-    position: absolute;
-    margin: 0px 0px 0px 0px;
-    filter: blur(10px);
-}
-
-
-#img2 {
-    width: 518px;
-    height: 225px;
-    border-radius: 3px;
-    position: absolute;
-    margin: 0px 0px 0px 681px;
-}
-
-
-#img3 {
-    width: 680px;
-    height: 225px;
-    border-radius: 3px;
-    position: absolute;
-    margin: 0px 0px 0px 1200px;
-}
-
-
-.Pealkiri {
-    font-size:90px; 
-    font-family:'Agency FB'; 
-    text-align:center; 
-    color:white;
-    text-shadow: -4px 0 black, 0 2px black, 5px 0 black, 0 -2px black;
-    position: absolute; 
-    top: 25px; 
-    left: 0; 
-    width: 100%; 
-}
-
-
-.ost {
-    position: absolute;
-    border: 2px white solid;
-    background-color: #D70081;
-    height: 90%;
-    width: 500px;
-    margin: 90px 0px 0px 20px;
-    float: left;
-    font-size: 20px;
-    font-family: "Consolas";
-}
-
-
-.ost p {
-    margin-left: 25px;
-    font-family: "Consolas";
-}
-
-
-.ost h3 {
-    font-family: 'Agency FB';
-    text-align: center;
-    color: black;
-    font-size: 68px;
-    margin-top: 0px
-}
-
-
-.ost select {
-   width: 200px;
-   height: 34px;
-   overflow: hidden;
-   background: url(http://bavotasan.com/wp-content/uploads/2011/05/down_arrow_select.jpg) no-repeat right #ddd;
-   border: 1px solid #ccc;
-   margin: 5px 0 0px 25px;
-   font-family: 'Consolas';
-   font-size: 18px;
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-   font-weight: bold;
-   text-align: center;
-   }
-}
-
-.ost option {
-    
-    font-size: 18px;
-    text-align: center;
-}
-
-
-.hinnaleht {
-    position: absolute;
-    width: 450px;
-    height: 90%;
-    background-color: #00B6B0;
-    border: 2px white solid;
-    margin: 90px 0 0 690px;
-    float: left;
-}
-
-
-.hinnaleht h3 {
-    font-family: 'Agency FB';
-    text-align: center;
-    color: black;
-    font-size: 68px;
-    margin-top: 0px;
-    margin-bot: -20px;
-}
-
-
-.hinnaleht li {
-    list-style-type: none;
-    font-family: "Consolas";
-    font-size: 18px;
-    margin: 15px 0 0 0;
-    text-align: center;
-}
-
-
-.ost input {
-    width: 200px;
-    height: 34px;
-    margin: 5px 0 0px 25px;
-    font-family: 'Consolas';
-    font-size: 18px;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    appearance: none;
-    background-color: #ccc;
-}
-
-
-.ost form input {
-    height: 18px;
-    margin: 0 0 0 -65px;
-}
-
-
-.ost span {
-    position: relative;
-    margin-left: -70px;
-    font.font-family: 'Consolas';
-}
-
-
-.kogus {
-    margin-left: 25px;
-    font-family: "Consolas";
-}
-
-
-.remont {
-    position: absolute;
-    border: 2px white solid;
-    background-color: #DC1;
-    height: 90%;
-    width: 500px;
-    top: 366px;
-    left: 1300px;
-    color: black;
-    font-family: 'Consolas';
-    font-size: 20px;
-}
-
-
-.remont h3 {
-    font-family: 'Agency FB';
-    text-align: center;
-    color: black;
-    font-size: 68px;
-    margin-top: 0px;
-}
-
-
-.remont p {
-    margin-left: 25px;
-    font-family: "Consolas";
-}
-
-
-.remont select { 
-    width: 200px;
-   height: 34px;
-   overflow: hidden;
-   background: url(http://bavotasan.com/wp-content/uploads/2011/05/down_arrow_select.jpg) no-repeat right #ddd;
-   border: 1px solid #ccc;
-   margin: 5px 0 0px 25px;
-   font-family: 'Consolas';
-   font-size: 18px;
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-   font-weight: bold;
-   text-align: center;
-}
-
-
-.ost button {
-    height: 75px;
-    width: 220px;
-    font-size: 36px;
-    position: relative;
-    left: 25px;
-    top: 108px;
-    background-color: #ccc;
-    font-family: 'Consolas';
-    font-weight: bold;
-}
-
-
-.remont form input {
-    height: 18px;
-    position: relative;
-    left: 20px;
-    width: 18px;
-}
-
-
-.remont span {
-    position: relative;
-    margin-left: 30px;
-}
-
-
-.remont button {
-    height: 75px;
-    width: 220px;
-    font-size: 36px;
-    position: relative;
-    left: 25px;
-    top: 130px;
-    background-color: #ccc;
-    font-family: 'Consolas';
-    font-weight: bold;
-}
-
-
-.tuup {
-  font-family: 'Consolas';
-}
-
-
-
-#JalgrattadInHinnad {
-  font-family: "Agency FB";
-  font-size: 38px;
-  text-align: center;
-  margin: -5px 0 -5px 0;
-}
-    </style>
-    <script type="text/javascript">
-    /*function toggleSelectBox(selbox){ 
-        if(selbox.size>1){//HIDE:
-            selbox.size=1;
-            selbox.style.height="34px";
-        }
-        else
-        {//SHOW:
-            selbox.size = selbox.options.length;
-            selbox.style.height='auto';
-        }
-    } */
-
-    function Arvuta2()
-    {
-        var hind = 0;
-        var valik = document.getElementById("type");
-        if (document.getElementById("lij").selected == true)
-        {
-            hind += 150;
-        }
-        else if (document.getElementById("laj").selected == true)
-        {
-            hind += 38;
-        }
-        else if (document.getElementById("mar").selected == true)
-        {
-            hind += 143;
-        }
-        else if (document.getElementById("maj").selected == true)
-        {
-            hind += 210;
-        }
-        else if (document.getElementById("hüj").selected == true)
-        {
-            hind += 85;
-        }
-        else if (document.getElementById("bmx").selected == true)
-        {
-            hind += 305;
-        }
-        else 
-        {
-            hind += 0;
-        }
-        var kokku = 0;
-        var hind2 = 0;
-        var kummid = document.getElementById("kummid");
-        var raam = document.getElementById("raam");
-        var sadul = document.getElementById("sadul");
-        var pidurid = document.getElementById("pidurid");
-        if (document.getElementById("kummid").checked == true && document.getElementById("raam").checked == false && document.getElementById("sadul").checked == false && document.getElementById("pidurid").checked == false)
-        {
-            hind2 += 150;
-        }
-
-        if (document.getElementById("kummid").checked == true && document.getElementById("raam").checked == true && document.getElementById("sadul").checked == false && document.getElementById("pidurid").checked == false)
-        {
-            hind2 += 170;
-        }
-
-        if (document.getElementById("kummid").checked == true && document.getElementById("raam").checked == true && document.getElementById("sadul").checked == true && document.getElementById("pidurid").checked == false)
-        {
-            hind2 += 200;
-        }
-
-        if (document.getElementById("kummid").checked == true && document.getElementById("raam").checked == true && document.getElementById("sadul").checked == true && document.getElementById("pidurid").checked == true)
-        {
-            hind2 += 300;
-        }
-
-
-        if (document.getElementById("kummid").checked == false && document.getElementById("raam").checked == true && document.getElementById("sadul").checked == false && document.getElementById("pidurid").checked == false)
-        {
-            hind += 20;
-        }
-
-        if (document.getElementById("kummid").checked == false && document.getElementById("raam").checked == true && document.getElementById("sadul").checked == true && document.getElementById("pidurid").checked == false)
-        {
-            hind += 50;
-        }
-
-        if (document.getElementById("kummid").checked == false && document.getElementById("raam").checked == true && document.getElementById("sadul").checked == true && document.getElementById("pidurid").checked == true)
-        {
-            hind += 150;
-        }
-
-        if (document.getElementById("kummid").checked == false && document.getElementById("raam").checked == false && document.getElementById("sadul").checked == true && document.getElementById("pidurid").checked == false)
-        {
-            hind += 30;
-        }
-
-        if (document.getElementById("kummid").checked == false && document.getElementById("raam").checked == false && document.getElementById("sadul").checked == true && document.getElementById("pidurid").checked == true)
-        {
-            hind += 130;
-        }
-
-        if (document.getElementById("kummid").checked == true && document.getElementById("raam").checked == false && document.getElementById("sadul").checked == true && document.getElementById("pidurid").checked == true)
-        {
-            hind += 280;
-        }
-
-        if (document.getElementById("kummid").checked == false && document.getElementById("raam").checked == false && document.getElementById("sadul").checked == false && document.getElementById("pidurid").checked == true)
-        {
-            hind += 100;
-        }
-
-        if (document.getElementById("kummid").checked == true && document.getElementById("raam").checked == false && document.getElementById("sadul").checked == false && document.getElementById("pidurid").checked == true)
-        {
-            hind += 250;
-        }
-
-        if (document.getElementById("kummid").checked == true && document.getElementById("raam").checked == true && document.getElementById("sadul").checked == false && document.getElementById("pidurid").checked == true)
-        {
-            hind += 270;
-        }
-        kokku = hind + hind2;        
-
-
-
-
-        if (document.getElementById("kliendikaartJah").checked == true && document.getElementById("Sula").checked == true)
-        {
-            kokku -= (kokku / 100) * 20;
-            alert("Kogu hind on: " + parseFloat(kokku) +  " €");
-        }
-
-        else if (document.getElementById("kliendikaartJah").checked == true && document.getElementById("Kaart").checked == true)
-        {
-            kokku -= (kokku / 100) * 10;
-            alert("Kogu hind on: " + parseFloat(kokku) +  " €");
-        }
-
-        else if (document.getElementById("kliendikaartEi").checked == true && document.getElementById("Sula").checked == true)
-        {
-            kokku -= (kokku / 100) * 10;
-            alert("Kogu hind on: " + parseFloat(kokku) +  " €");
-        }
-
-        else if (document.getElementById("kliendikaartEi").checked == true && document.getElementById("Kaart").checked == true)
-        {
-            alert("Kogu hind on: " + parseFloat(kokku) +  " €");
-        }
-
-        else 
-        {
-            alert("Sa ei vastanud kõikidele küsimustele!");
-        }
-    }
-
-
-    function Arvuta1() 
-    {
-        var kokku = 0;
-        var hind = 0;
-        var valik = document.getElementById("type");
-        if (document.getElementById("lij2").selected == true)
-        {
-            hind += 300;
-        }
-        else if (document.getElementById("laj2").selected == true)
-        {
-            hind += 75;
-        }
-        else if (document.getElementById("mar2").selected == true)
-        {
-            hind += 287;
-        }
-        else if (document.getElementById("maj2").selected == true)
-        {
-            hind += 420;
-        }
-        else if (document.getElementById("hüj2").selected == true)
-        {
-            hind += 170;
-        }
-        else if (document.getElementById("bmx2").selected == true)
-        {
-            hind += 610;
-        }
-        else 
-        {
-            hind += 0;
-        }
-
-        
-        var kogus = document.getElementById("kogus").value * 1;
-        kokku = hind * kogus;
-
-        if (document.getElementById("uus").checked == true)
-        {
-            kokku = hind * kogus;
-            
-        }
-
-        else if (document.getElementById("kasutatud").checked == true)
-        {
-            kokku -= ((kokku / 100) * 60);
-        }
-
-        else if (document.getElementById("rikkis").checked == true) 
-        {
-            kokku -= ((kokku / 100) * 80);
-        }
-        var kokku2 = kokku;
-
-
-
-        if (document.getElementById("kliendikaartJah2").checked == true && document.getElementById("Sula2").checked == true)
-        {
-            kokku2 -= (kokku / 100) * 20;
-            alert("Kogu hind on: " + parseFloat(kokku2) +  " €");
-        }
-
-        else if (document.getElementById("kliendikaartJah2").checked == true && document.getElementById("Kaart2").checked == true)
-        {
-            kokku2 -= (kokku / 100) * 10;
-            alert("Kogu hind on: " + parseFloat(kokku2) +  " €");
-        }
-
-        else if (document.getElementById("kliendikaartEi2").checked == true && document.getElementById("Sula2").checked == true)
-        {
-            kokku2 -= (kokku / 100) * 10;
-            alert("Kogu hind on: " + parseFloat(kokku2) +  " €");
-        }
-
-        else if (document.getElementById("kliendikaartEi2").checked == true && document.getElementById("Kaart2").checked == true)
-        {
-            alert("Kogu hind on: " + parseFloat(kokku2) +  " €");
-        }
-
-        else 
-        {
-            alert("Sa ei vastanud kõikidele küsimustele!");
-        }
-    }
-    </script>
+	<title>Snake game</title>
+	<style>
+	canvas {
+		display: block;
+		position: absolute;
+		border: 1px solid black;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	p {
+		visibility: hidden;
+	}
+	</style>
 </head>
 <body>
-    <div class="remont">
-        <h3>Remont</h3>
-        <p>Millist tüüpi sinu jalgratas on?(-50% jalgratta täis hinnast)</p>
-        <form name="Arvuti1">
-        <select id="type" name="type" onmouseout="toggleSelectBox(this)" onmouseover="toggleSelectBox(this)">
-            <option value="0">Vali</option>
-            <option value="300" id="lij">Linnajalgratas</option>
-            <option value="75" id="laj">Lastejalgratas</option>
-            <option value="287" id="mar">Maanteeratas</option>
-            <option value="420" id="maj">Maastikujalgratas</option>
-            <option value="170" id="hüj">Hübriidjalgratas</option>
-            <option value="610" id="bmx">BMX</option>
-        </select>
-        </form>
+<script>
+//Constants
+var COLS = 26, ROWS = 26;
+//IDs
+var EMPTY = 0, SNAKE = 1, FRUIT = 2;
+//Directions
+var LEFT = 0, UP = 1, RIGHT = 2, DOWN = 3;
+//KeyCodes
+var KEY_LEFT = 37, KEY_UP = 38, KEY_RIGHT= 39, KEY_DOWN=40;
+
+var grid = {
+	width: null,
+	height: null,
+	_grid: null,
+
+	init: function(d, c, r) {
+		this.width = c;
+		this.height = r;
+
+		this._grid = [];
+		for (var x=0; x < c; x++) {
+			this._grid.push([]);
+			for (var y = 0; y < r; y++) {
+				this._grid[x].push(d);
+			}
+		}
+	},
+
+	set: function(val, x, y) {
+		this._grid[x][y] = val;
+	},
+
+	get: function(x, y) {
+		return this._grid[x][y];
+	}
+}
+
+var snake = {
+	direction: null,
+	last: null,
+	_queue: null,
+
+	init: function(d, x, y) {
+		this.direction = d;
+
+		this._queue = [];
+		this.insert(x, y);
+	},
 
 
-        <p>Mida on vaja parandada?(Võid valida mitu)</p>
-        <form name="Arvuti1">
-            <input type="checkbox" value="150" id="kummid"><span>Kummid</span><br>
-            <input type="checkbox" value="20" id="raam"><span>Raam</span><br>
-            <input type="checkbox" value="30" id="sadul"><span>Sadul</span><br>
-            <input type="checkbox" value="100" id="pidurid"><span>Pidurid</span>
-        </form>
+	insert: function(x, y) {
+		// unshift prepends an element to an array
+		this._queue.unshift({x:x, y:y});
+		this.last = this._queue[0];
+	},
+
+	remove: function() {
+		return this._queue.pop();
+	}
+}
 
 
-        <p>Kas on olemas kliendikaart?</p>
-        <form name="Arvuti1">
-        <input name="kliendikaart" type="radio" id="kliendikaartJah"><span>Jah</span>
-        <input name="kliendikaart" type="radio" id="kliendikaartEi"><span>Ei</span>
-        </form>
+function setFood() {
+	var empty = [];
+	for (var x = 0;x < grid.width; x++) {
+		for (var y = 0; y < grid.height; y++) {
+			if (grid.get(x, y) === EMPTY) {
+				empty.push({x:x, y:y});
+			}
+		}
+	}
+	var randpos = empty[Math.floor(Math.random() * empty.length)];
+	grid.set(FRUIT, randpos.x, randpos.y);
+}
+
+// Game object
+var canvas, ctx, keystate, frames, score, highscore;
+
+function main() {
+	canvas = document.createElement("canvas");
+	highscore = document.getElementById("score");
+	highscore = 0;
+	canvas.width = COLS*20;
+	canvas.height = ROWS * 20;
+	ctx = canvas.getContext("2d");
+	document.body.appendChild(canvas);
+
+	frames = 0;
+	keystate = {};
+	document.addEventListener("keydown", function(evt) {
+		keystate[evt.keyCode] = true;
+	});
+	document.addEventListener("keyup", function(evt) {
+		delete keystate[evt.keyCode];
+	});
 
 
-        <p>Kas sulas või kaardiga?</p>
-        <form name="Arvuti4">
-            <input name="makse" type="radio" id="Sula"><span>Sula</span>
-            <input name="makse" type="radio" id="Kaart"><span>Kaardiga</span>
-        </form>
-        <p id="Answer"></p>
+	init();
+	loop();
+}
 
+function init() {
+	score = 0;
+	grid.init(EMPTY, COLS, ROWS);
 
-        <button type="button" onclick="Arvuta2();">Kokku</button>
+	var sp = {x:Math.floor(COLS/2), y:ROWS-1};
+	snake.init(UP, sp.x, sp.y);
+	grid.set(SNAKE, sp.x, sp.y);
 
+	setFood();
+}
 
-        <button type="button" onclick ="document.location.reload(true)">Uuenda</button>
+function loop() {
+	update();
+	draw();
 
+	window.requestAnimationFrame(loop, canvas);
+}
 
-    </div>
+function update() {
+	frames++;
 
+	if (keystate[KEY_LEFT] && snake.direction !== RIGHT) snake.direction = LEFT;
+	if (keystate[KEY_UP] && snake.direction !== DOWN) snake.direction = UP;
+	if (keystate[KEY_RIGHT] && snake.direction !== LEFT) snake.direction = RIGHT;
+	if (keystate[KEY_DOWN] && snake.direction !== UP) snake.direction = DOWN;
 
-    <div class="jalgrattapood">
-        <img id="img1" src="https://bicycledutch.files.wordpress.com/2013/05/kemps-shop.jpg"/>
-        <img id="img2" src="http://elms.readyhosting.com/Classes/Web%20Design/Devon/bikestore.jpg"/>
-        <img id="img3" src="http://www.kenfosterscyclelogic.co.uk/smsimg/uploads/shop_images/100_3643.jpg"/>
-        <h1 class="Pealkiri">Jalgratta pood</h1>
-    </div>
-    <div class="hinnaleht">
-        <h3>Hinnad</h3>
-        <p id="JalgrattadInHinnad">Jalgrattad</p>
-        <ul>
-            <li>Linnalajgratas - 300€</li>
-            <li>Lastejalgratas - 75€</li>
-            <li>Maanteeratas - 287€</li>
-            <li>Maastikujalgratas - 420€</li>
-            <li>Hübriidjalgratas - 170€</li>
-            <li>BMX - 610€</li>
-        </ul>
-        <p id="JalgrattadInHinnad">Varuosad</p>
-        <ul>
-            <li>Kummid - 150€</li>
-            <li>Raam - 20€</li>
-            <li>Sadul - 30€</li>
-            <li>Pidurid - 100€</li>
-        </ul>
-        <p id="JalgrattadInHinnad">Soodustused</p>
-        <ul>
-            <li>10% soodustus klientidele</li>
-            <li>10% soodustus sulas makstes</li>
-        </ul>
-    </div>
-    <div class="ost">
-        <h3>Pood</h3>
+	if (frames%3 === 0) {
+		var nx = snake.last.x;
+		var ny = snake.last.y;
 
+		switch (snake.direction) {
+			case LEFT:
+				nx--;
+				break;
+			case UP:
+				ny--;
+				break;
+			case RIGHT:
+				nx++;
+				break;
+			case DOWN:
+				ny++;
+				break;
+		}
 
-        <p>Millist tüüpi jalgratast soovid?</p>
-        <select name="type" onmouseout="toggleSelectBox(this)" onmouseover="toggleSelectBox(this)">
-            <option value="0">Vali</option>
-            <option value="300" id="lij2">Linnajalgratas</option>
-            <option value="75" id="laj2">Lastejalgratas</option>
-            <option value="287" id="mar2">Maanteeratas</option>
-            <option value="420" id="maj2">Maastikujalgratas</option>
-            <option value="170" id="hüj2">Hübriidjalgratas</option>
-            <option value="610" id="bmx2">BMX</option>
-        </select>
+		if (0 > nx || nx > grid.width-1 || 0 > ny || ny > grid.height-1 || grid.get(nx, ny) === SNAKE) {
+			return init();
+		}
 
+		if (grid.get(nx, ny) === FRUIT){
+			var tail = {x:nx, y:ny};
+			score++;
+			setFood();
+		} else {
+			var tail = snake.remove();
+			grid.set(EMPTY, tail.x, tail.y);
+			tail.x = nx;
+			tail.y = ny;
 
-        <p class="kogus">Sisesta kogus</p>
-        <input name="kogus" type="number" min= "0" id="kogus"></input>
+			if (score > highscore)
+			{
+				highscore = score;
+			} 
+		}
+		grid.set(SNAKE, tail.x, tail.y);
 
-        <p>Vali üks</p>
-        <form>
-          <input type="radio" name="milline" value="uus" id="uus"><span class="tuup">Uus</span><br>
-          <input type="radio" name="milline" value="kasutatud" id="kasutatud"><span class="tuup">Kasutatud (60% soodus)</span><br>
-          <input type="radio" name="milline" value="rikkis" id="rikkis"><span class="tuup">Rikkis (80% soodus)</span><br>
-        </form>
+		snake.insert(tail.x, tail.y);
+	}
+}
 
+function draw() {
+	var tw = canvas.width/grid.width;
+	var th = canvas.height/grid.height;
 
-        <p>Kas on olemas kliendikaart?</p>
-        <form>
-        <input name="kliendikaart" type="radio" id="kliendikaartJah2"><span>Jah</span>
-        <input name="kliendikaart" type="radio" id="kliendikaartEi2"><span>Ei</span>
-        </form>
+	for (var x = 0;x < grid.width; x++) {
+		for (var y = 0; y < grid.height; y++) {
+			switch (grid.get(x, y)) {
+				case EMPTY:
+					ctx.fillStyle = "#fff";
+					break;
+				case SNAKE:
+					ctx.fillStyle = "#0ff";
+					break;
+				case FRUIT:
+					ctx.fillStyle = "#f00";
+					break;
+			}
+			ctx.fillRect(x*tw, y*th, tw, th);
+		}
+	}
+	ctx.fillStyle = "#000";
+	ctx.fillText("SCORE: " + score, 5, canvas.height - 5);
+	ctx.font = "18px Arial";
+	ctx.fillText("BEST SCORE: " + highscore, canvas.width - 150, canvas.height - 5);
+}
 
-
-        <p>Kas sulas või kaardiga?</p>
-        <form>
-            <input name="makse2" type="radio" id="Sula2"><span>Sula</span></input>
-            <input name="makse2" type="radio" id="Kaart2"><span>Kaardiga</span></input>
-
-        </form>
-
-
-        <button type="button" onclick="Arvuta1();">Kokku</button>
-
-
-        <button type="button" onclick ="document.location.reload(true)">Uuenda</button>
-        
-    </div>
+main();
+</script>
+<p id="score">0</p>
 </body>
 </html>
